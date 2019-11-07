@@ -1,0 +1,3 @@
+[submodule "video-player"]
+	path = video-player
+	url = https://github.com/appane/video-player.git

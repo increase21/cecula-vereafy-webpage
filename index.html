@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Enable Two-Factor Authentication 2FA on your account across several websites. Vereafy uses Time-based OTP, SMS, Voice, Callback, Push Notification">
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./video-player/css/player.p.css">
+    <title>Cecula Vereafy - Enable Two-Factor Authentication on your accounts.</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://www.cecula.com/vereafy">
+                <img src="./img/vereafy-icon.svg" alt="Vereafy Logo">
+                <h1>Cecula<span>Vereafy</span></h1>
+            </a>
+        </div>
+        <nav>
+            <ul id="nav">
+                <li>
+                    <a id="download-app" href="#app-download">
+                        <img src="./img/v-download.png" alt="Download">
+                        <span>Download</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="v-secure-yourself" href="#tfa-guide">
+                        <img src="./img/v-shield.png" alt="Secure Yourself">
+                        <span>Secure Yourself</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="v-tell-someone" href="#action">
+                        <img src="./img/v-share.png" alt="Share with Friends">
+                        <span>Share with Friends</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section title="Introduction" class="introduction">
+            <div class="intro">
+                <div class="intro-img"><img src="./img/vereafy-icon@2x.png" alt="Vereafy"></div>
+                <div class="intro-details center">
+                    <h1>Enable 2FA. Be In Control</h1>
+                    <p class="mt-1 section-subtitle text-white">Of your online activities. Two-Factor Authentication 2FA gives you a layer of security beyond your password. Don’t lose your account and resources to hackers and cyber criminals.</p>
+                    <button class="btn btn-red mt-1" ccl-video-src="https://www.youtube.com/embed/OmLoMDHcBns">Watch Video</button>
+                    <!-- <button id="download-btn" class="btn btn-white">DOWNLOAD</button> -->
+                </div>
+                <div class="trape-trans center text-white">
+                    <h2>Be More than a user. Be an Authority.</h2>
+                    <p class="section-subtitle">The Vereafy app is power in your hand. Use it to approve or decline logins and transactions on any of your accounts.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section title="Download Vereafy App" id="app-download" class="download">
+            <div class="download-img">
+                <img src="./img/android.png" alt="Vereafy App" class="phone">
+            </div>
+            <div class="download-details">
+                <h2>Download Vereafy</h2>
+                <p class="section-subtitle">The only Two-Factor Authentication (2FA) app you need for managing access to your accounts and authorizing transactions across several websites.</p>
+                <a href=""><img src="./img/bitmap.png" alt="Install Vereafy from Google Play Store"></a>
+            </div>
+        </section>
+        
+        <!-- Social Activities Section -->
+        <section title="2FA Integration Guides" id="tfa-guide" class="tfa-guide">
+            <div class="social-details center">
+                <h2>Enable Two-Factor Authentication (2FA) on your Accounts</h2>
+                <p class="section-subtitle">See 2FA guide from frequently visited websites</p>
+            </div>
+            <div class="s-icons">
+                <a href=""><img class="media-icon" src="./img/social/icon-facebook.png" alt="How to activate 2FA on Facebook"></a>
+                <a href=""><img class="media-icon" src="./img/social/icon-linkedin.png" alt="How to activate 2FA on LinkedIn"></a>
+                <a href=""><img class="media-icon" src="./img/social/icon-instagram.png" alt="How to activate 2FA on Instagram"></a>
+                <a href=""><img class="media-icon" src="./img/social/icon-twitter.png" alt="How to activate 2FA on Twitter"></a>
+                <a href=""><img class="media-icon" src="./img/social/icon-gmail.png" alt="How to activate 2FA on GMail"></a>
+                <a href=""><img class="media-icon" src="./img/social/icon-amazon.png" alt="How to activate 2FA on Amazon"></a>
+                <a href=""><img class="media-icon" src="./img/social/icon-github.png" alt="How to activate 2FA on GitHub"></a>
+            </div>
+            <p class="center">See full list</p>
+        </section>
+
+        <!-- Take Action Section -->
+        <section title="Take action towards a safe web" id="action" class="action">
+            <div class="take-action">
+                <div class="container">
+                    <div class="center">
+                        <h2 class="text-red">Take Action. Towards a Safer Web</h2>
+                        <p class="section-subtitle">Join the conversation on social media, and help increase online security awareness by invite your friends.</p>
+                    </div>
+                    <div class="req-form mt-1">
+                        <div class="form1">
+                            <h3 class="center">Share with a friend you know might need this</h3>
+                            <p class="section-subtitle center">Security is a community problem. When you tell a friend you might just have saved one person from being a victim of cyber fraud.</p>
+                            <div class="error friend-message"></div>
+                            <div class="header-row">
+                                <div class="form-row">
+                                    <label for="referrer_name">Your Name (as your friend knows it)</label>
+                                    <input class="forminput" type="text" id="referrer_name" autocomplete="name" required>
+                                </div>
+                                <div class="form-row">
+                                    <label for="friend_name">Friend’s First Name</label>
+                                    <input class="forminput" type="text" id="friend_name" autocomplete="name" required>
+                                </div>
+                                <div class="form-row">
+                                    <label for="friend_mobile">Friend’s Mobile Number</label>
+                                    <input class="forminput" type="text" id="friend_mobile" autocomplete="mobile" required>
+                                </div>
+                                <div class="form-div-btn">
+                                    <button id="friend_btn" class="btn btn-red btn-small">SUBMIT</button>
+                                </div>
+                            </div>
+                            <div class="info mt-1 center"> <i class="material-icons mater">error_outline</i> <span> We’re not storing this information. We’ll be sending an sms to your friend right away</span></div>
+                        </div>
+                        <div class="form1" style="margin-top:1px">
+                            <h3 class="center">Recommend for a Business</h3>
+                            <p class="section-subtitle center">Suggest Vereafy for an online business you love and patronize. When they implement 2FA, they help secure your account and the internet community.</p>
+                            <div class="error business-message"></div>
+                            <div class="header-row">
+                                <div class="form-row">
+                                    <label for="business_name">Business Name</label>
+                                    <input id="business_name" class="forminput" type="text" autocomplete="organization">
+                                </div>
+                                <div class="form-row">
+                                    <label for="your_name">Your Name</label>
+                                    <input id="your_name" class="forminput" type="text" autocomplete="name">
+                                </div>
+                                <div class="form-row">
+                                    <label for="business_website">Business Website</label>
+                                    <input id="business_website" class="forminput" type="url" autocomplete="url">
+                                </div>
+                                <div class="form-div-btn">
+                                    <button id="business_btn" class="btn btn-red btn-small disabled">SUBMIT</button>
+                                </div>
+                            </div>
+                            <div class="info mt-1 center"><i class="material-icons mater">error_outline</i> We gather these recommendations till we have enough before we approach the business.</div>
+                        </div>
+                        <div class="action-footer">
+                            <div class="left">
+                                <h1>Join the conversation on social media</h1>
+                                <p>Let’s discuss the cyber-security problem, share experiences and learn how to stay safe on the internet.</p>
+                                <div class="sub-footer-icon">
+                                    <a target="_blank" href="https://facebook.com/vereafy"><img class="sub-img" src="./img/social/feather-facebook.png" alt="Follow us on Facebook"></a>
+                                    <a target="_blank" href="https://linkedin.com/vereafy"><img class="sub-img" src="./img/social/feather-linkedin.png" alt="Follow us on LinkedIn"></a>
+                                    <a target="_blank" href="https://twitter.com/vereafy"><img class="sub-img" src="./img/social/feather-twitter.png" alt="Follow us on Twitter"></a>
+                                    <a target="_blank" href="https://instagram.com/vereafy"><img class="sub-img" src="./img/social/feather-instagram.png" alt="Follow us on Instagram"></a>
+                                    <a target="_blank" href="https://youtube.com/channel/UCEIIJR-eA1lGSLK6eEtQruA"><img class="sub-img" src="./img/social/feather-youtube.png" alt="Subscribe to our YouTube Channel"></a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <h1>Share this Page</h1>
+                                <p>If you love this app. Please help more people discover this page.</p>
+                                <div class="sub-footer-icon mt-1-half">
+                                    <a target="_blank" href="https://"><img class="sub-img" src="./img/social/light-facebook.png" alt="Share this page on Facebook"></a>
+                                    <a target="_blank" href="https://"><img class="sub-img" src="./img/social/light-twitter.png" alt="Share this page on Twitter"></a>
+                                    <a target="_blank" href="https://"><img class="sub-img" src="./img/social/light-digg.png" alt="Share this page on Digg"></a>
+                                    <a target="_blank" href="https://"><img class="sub-img" src="./img/social/light-fa-brands.png" alt="Share this page on Mix"></a>
+                                    <a target="_blank" href="https://"><img class="sub-img" src="./img/social/light-tumblr.png" alt="Share this page on Tumblr"></a>
+                                    <a target="_blank" href="https://"><img class="sub-img" src="./img/social/light-linkedin.png" alt="Share this page on LinkedIn"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <div class="main-footer">
+        <div class="container copy-footer">
+            <div class="footer-links">
+                <section title="Supported 2FA Methods" class="f-link">
+                    <h1>IN-APP 2FA METHODS</h1>
+                    <ul>
+                        <li><a href="">Time-based One Time PIN</a></li>
+                        <li><a href="">SMS OTP</a></li>
+                        <li><a href="">Voice OTP</a></li>
+                        <li><a href="">Callback</a></li>
+                        <li><a href="">RealTouch</a></li>
+                    </ul>
+                </section>
+                <section title="Use-Cases" class="f-link">
+                    <h1>USE-CASES</h1>
+                    <ul>
+                        <li><a href="">Number Verification</a></li>
+                        <li><a href="">Access Control</a></li>
+                        <li><a href="">Transaction Authorization</a></li>
+                    </ul>
+                </section>
+                <section title="Resources" class="f-link">
+                    <h1>RESOURCES</h1>
+                    <ul>
+                        <li><a href="">How to Enable 2FA on sites</a></li>
+                        <li><a href="">Developer</a></li>
+                        <li><a href="">Downloads</a></li>
+                        <li><a href="">App Features</a></li>
+                        <li><a href="">Support</a></li>
+                    </ul>
+                </section>
+                <section title="Company" class="f-link">
+                    <h1>COMPANY</h1>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Career</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </section>
+                <section title="Subscribe to Newsletter" class="newsletter">
+                    <h1>Subscribe for our Monthly Newsletter</h1>
+                    <p>To receive the latest updates on our products, services and policies.</p>
+                    <label for="subscribe-input" class="text-white">Email</label>
+                    <div class="sub-div">
+                        <input id="subscribe-input" class="subscribe-input" type="email" autocomplete="email" placeholder="eg. name@company.com">
+                        <button class="btn btn-red btn-small">SUBSCRIBE</button>
+                    </div>
+                </section>
+            </div>
+            <div class="copyright">
+                <div class="f-logo">
+                    <a href="https://www.cecula.com"><img src="./img/group.png" alt="Cecula"></a>
+                </div>
+                <div class="copyright-details">
+                    <p>We are rethinking messaging, unifying communication and giving control back to you.</p>
+                    <p>Copyright &copy; 2019 Cecula Ltd. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- Video Player -->
+    <div id="mask" class="hide-element">
+        <div id="videoPlayer"></div>
+        <i id="closePlayer" class="material-icons">close</i>
+    </div>
+</body>
+<script src="./js/endpoint.js"></script>
+<script src="./video-player/js/player.js"></script>
+<script src="./js/lib.js"></script>
+</html>
